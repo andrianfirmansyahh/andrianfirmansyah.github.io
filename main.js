@@ -75,7 +75,7 @@ const geometry3 = new THREE.BoxGeometry();
 
 
 //MATERIALS
-const material = new THREE.MeshStandardMaterial()
+const material = new THREE.MeshStandardMaterial({antialias: true})
 material.metalness = 0.7
 material.roughness = 0.2
 material.normalMap = normalTexture;
@@ -94,7 +94,7 @@ cube1.position.y = 1;
 cube1.position.z = 2;
 scene.add( cube1 );
 
-const material2 = new THREE.MeshStandardMaterial();
+const material2 = new THREE.MeshStandardMaterial({antialias: true});
 material2.metalness = 0.7
 material2.roughness = 0.2
 material2.normalMap = normalTexture;
@@ -105,7 +105,7 @@ cube2.position.y = 0;
 cube2.position.z = -2;
 scene.add( cube2 );
 
-const material3 = new THREE.MeshStandardMaterial();
+const material3 = new THREE.MeshStandardMaterial({antialias: true});
 material3.metalness = 0.7
 material3.roughness = 0.2
 material3.normalMap = normalTexture;
